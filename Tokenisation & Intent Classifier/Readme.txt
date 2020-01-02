@@ -1,0 +1,1 @@
+Break the sentences into single words, converting any upercase Letters to lower case, and classifying the query/intention of the text
