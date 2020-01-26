@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Locator</title>
+</head>
+<body>
+	<p id = "status"></p>
+	<a id = "map-link" target="_blank" style="display: none;"></a>
+	<form style="display:none;" id="loc" name="location" action="{% url 'locator-hexa' %}" method="POST">{% csrf_token %}<input id="latias" type="hidden" name="lat"><input id="latios" type="hidden" name="lon"></form>
+</body>
+<script>
+	function geoFindMe() {
+
+  const status = document.querySelector('#status');
+  const mapLink = document.querySelector('#map-link');
+
+  mapLink.href = '';
+  mapLink.textContent = '';
+
+  function success(position) {
+    const latitude  = position.coords.latitude;
+    const longitude = position.coords.longitude;
+
+    status.textContent = '';
+    mapLink.href = `https://www.openstreetmap.org/#map=18/${latitude}/${longitude}`;
+    mapLink.textContent = `Latitude: ${latitude} °, Longitude: ${longitude} °`;
+    document.getElementById("latias").value = `${latitude}`;
+    document.getElementById("latios").value = `${longitude}`;
+    document.getElementById("loc").submit();
+  }
+
+  function error() {
+    status.textContent = 'Unable to retrieve your location';
+  }
+
+  if (!navigator.geolocation) {
+    status.textContent = 'Geolocation is not supported by your browser';
+  } else {
+    navigator.geolocation.getCurrentPosition(success, error);
+  }
+
+}
+
+window.onload = geoFindMe();
+</script>
+</html>
