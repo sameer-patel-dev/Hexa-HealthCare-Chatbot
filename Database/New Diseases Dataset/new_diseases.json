@@ -311,7 +311,7 @@
   },
   {
     "disease": [ "gastritis"],
-    "symptoms": [ "heme positive","pain abdominal","vomiting","disequilibrium","nausea","intoxication","haemorrhage","guaiac positive","pain","decreased body weight","sore to touch","dizziness"
+    "symptoms": [ "heme positive","pain abdominal","vomiting","disequilibrium","nausea","intoxication","haemorrhage","guaiac positive","pain","decreased body weight","sore to touch","dizziness"]
   },
   {
     "disease": [ "hemorrhoids"],
@@ -330,7 +330,7 @@
     "symptoms": [ "fever","erythema","decreased translucency","hepatosplenomegaly","chill","pruritus","diarrhea","abscess bacterial","swelling","pain","apyrexial","cough"]
   },
   {
-    "disease": [ "failure kidney]",
+    "disease": [ "failure kidney"],
     "symptoms": [ "orthopnea","oliguria","slowing of urinary stream","extreme exhaustion","unresponsiveness","hypotension","enuresis","shortness of breath","haemorrhage","prostatism","no status change","bedridden","bedridden","fatigue"]
   },
   {
@@ -502,7 +502,7 @@
     "symptoms": [ "shortness of breath","hypoxemia","tachypnea","hematocrit decreased","pain chest","dyspnea","pleuritic pain","neck stiffness","yellow sputum","productive cough","cicatrisation","unresponsiveness","distress respiratory","wheezing","apyrexial","non-productive cough"]
   },
   {
-    "disease": [ "hyperbilirubinemia]",
+    "disease": [ "hyperbilirubinemia"],
     "symptoms": [ "cyanosis","tachypnea","para 1","bradycardia","breech presentation","cushingoid facies","cushingoid�habitus","cough","myalgia"]
   },
   {
