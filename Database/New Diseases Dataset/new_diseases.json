@@ -1,3 +1,5 @@
+{
+	"intents": 
 [
   {
     "disease": [ "depression mental"],
@@ -600,3 +602,4 @@
     "symptoms": [ "fever","distress respiratory","hypotension","tachypnea","chill","lethargy","bradycardia","breech presentation","cyanosis","spontaneous rupture of membranes","haemorrhage","unresponsiveness","rale","apyrexial"]
   }
 ]
+}
